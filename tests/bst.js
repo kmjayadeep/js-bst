@@ -2,9 +2,16 @@ const expect = require('chai').expect;
 const BinarySearchTree = require('../index').BinarySearchTree
 const bst = new BinarySearchTree()
 
-bst.insert(10,'11')
-bst.insert(12,'11')
-bst.insert(8,'11')
-bst.insert(9,'11')
+bst.insert(10,'10')
+bst.insert(12,'12')
+bst.insert(8,'8')
+bst.insert(9,{
+  val:8
+})
 
 console.log(bst.getTree())
+console.log(bst.getInorderArray())
+
+bst.inorderTraversal(function(val){
+  console.log(val)
+})
