@@ -10,8 +10,5 @@ bst.insert(9,{
 })
 
 console.log(bst.getTree())
-console.log(bst.getInorderArray())
 
-bst.inorderTraversal(function(val){
-  console.log(val)
-})
+console.log(bst.search(91))
