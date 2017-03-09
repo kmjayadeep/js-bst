@@ -2,6 +2,9 @@
 
 This is a simple binary search tree implemented in javascript. Supported in nodejs and frontend
 
+[![NPM](https://nodei.co/npm/js-bst.png)](https://npmjs.org/package/js-bst)
+
+[![npm](https://img.shields.io/npm/dm/js-bst.svg)](https://www.npmjs.com/package/js-bst)
 
 ### Installation
 
