@@ -62,7 +62,7 @@ describe('Binary Search Tree',function(){
       bst.insert(10,'hello')
       bst.insert(20,'world')
       bst.insert(5,'hi')
-      expect(bst.getInorderArray()).to.deep.equal([{
+      expect(bst.getInOrderArray()).to.deep.equal([{
         key:5,
         val:'hi'
       },{
@@ -73,14 +73,14 @@ describe('Binary Search Tree',function(){
         val:'world'
       }])
     })
-    
+
     it('Inorder Traversal',function(){
       var bst = new BinarySearchTree()
       bst.insert(10,'hello')
       bst.insert(20,'world')
       bst.insert(5,'hi')
       var res = []
-      bst.inorderTraversal(function(val){
+      bst.inOrderTraversal(function(val){
         res.push(val)
       })
       expect(res).to.deep.equal([ 'hi', 'hello', 'world' ])
